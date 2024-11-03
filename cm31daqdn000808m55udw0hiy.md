@@ -2,7 +2,7 @@
 title: "Intro to AWS: Cloud Overview, Uses, and IAM Basics"
 datePublished: Sun Nov 03 2024 09:05:59 GMT+0000 (Coordinated Universal Time)
 cuid: cm31daqdn000808m55udw0hiy
-slug: intro-to-aws-cloud-overview-uses-and-iam-basics
+slug: intro-to-aws
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730624298502/30adfae2-15ec-48be-bfae-ba96ad3ecb39.jpeg
 tags: blogswithcc
 
