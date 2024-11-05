@@ -9,7 +9,7 @@ tags: blogswithcc
 
 ---
 
-In this blog, we will learn about EBS, its volume types, snapshots, and backup. To better understand this, it's helpful to have some knowledge about [EC2](https://rawad.hashnode.dev/intro-to-aws).
+In this blog, we will learn about EBS, its volume types, snapshots, backup, and AMIs. To better understand this, it's helpful to have some knowledge about [EC2](https://rawad.hashnode.dev/intro-to-aws).
 
 ## AWS EBS (Elastic Block Store)
 
