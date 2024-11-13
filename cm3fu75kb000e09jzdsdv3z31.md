@@ -42,7 +42,7 @@ Within the bucket, the data or files that are stored are called Objects. It must
 
 The actual data or contents of the body are the Object Values. Each object can be up to 5 TB (5000GB) in size. For files larger than 5 GB, you need to use "multi-part upload," which breaks the file into smaller parts for faster, more reliable uploads.
 
-## S3 Security
+### **S3 Security**
 
 Amazon S3 protects data by controlling access to its resources. It uses both user-based and resource-based mechanisms to maintain security.
 
