@@ -91,24 +91,36 @@ An example of JSON policy to the objects in a bucket
 
 Encryption is automatically applied to new objects stored in this bucket. In S3 it is called **Server-Side Encryption (SSE)** which can be of three types.
 
-* **SSE-S3**: In this encryption, keys are owned, managed and handled by AWS S3. Data is encrypted using “AES-256“.
+### SSE-S3:
+
+* In this encryption, keys are owned, managed and handled by AWS S3. Data is encrypted using “AES-256“.
     
     Whenever new buckets and objects are created, S3 automatically encrypts it (by default) with a unique key and manages it for further use.
     
-    The picture below describes the scenerio in simpler way.
+    The picture below describes the scenario in simpler way.
     
-* **SSE-KMS**: It uses the AWS Key Management Service (KMS) for handling and managing encryption keys.
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731592227727/0c3ee2e8-094c-495b-87ff-43633f0ef385.png align="center")
     
-    As the keys are managed by yourself, you can audit key usage using CloudTrial. Moreover, KMS handles key rotation automatically making it more secure.
+
+### SSE-KMS:
+
+* It uses the AWS Key Management Service (KMS) for handling and managing encryption keys.
     
-* **SSE-C**: This Server-Side Encryption provides the freedom to the clients or customers to create and manage own encryption keys.
+    As the keys are managed by yourself, you can audit key usage using CloudTrail. Moreover, KMS handles key rotation automatically making it more secure.
+    
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731592408352/4762feb1-5fb9-423a-868c-d43762f6038a.png align="center")
+
+### SSE-C:
+
+* This Server-Side Encryption provides the freedom to the clients or customers to create and manage own encryption keys.
     
     Whenever Customer provides the key, AWS encrypts the data and discards the key once encryption is done, meaning Amazon S3 does not store the key you provide.
     
     However, S3 requires HTTPS for all requests that use SSE-C to maintain secured transmission of customer provided keys.
     
-
-![](https://miro.medium.com/v2/resize:fit:2000/1*ii-X6URstvPGwqGo6DS-6Q.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731592504802/97b1e831-e683-46a3-ad94-37c2a0f71173.png align="center")
+    
 
 SSE-C encryption is suitable for users who want to manage their own keys, also want to use S3' encryption features.
 
