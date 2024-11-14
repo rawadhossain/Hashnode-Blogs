@@ -124,6 +124,8 @@ Encryption is automatically applied to new objects stored in this bucket. In S3 
 
 SSE-C encryption is suitable for users who want to manage their own keys, also want to use S3' encryption features.
 
+> Bucket policies are processed first, followed by the 'Default Encryption' settings.
+
 ### S3 Block Public Access
 
 This block public access setting prevents accidental exposure of buckets and objects to the public internet. You can apply block public access settings to restrict all unauthorized public access or cross-account access.
