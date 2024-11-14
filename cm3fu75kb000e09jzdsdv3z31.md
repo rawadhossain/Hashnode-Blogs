@@ -87,18 +87,30 @@ An example of JSON policy to the objects in a bucket
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731495048051/e22e584c-7c3f-42cf-9b56-c7ec0f844131.png align="center")
 
-### Encryption
+### S3 Encryption
 
 Encryption is automatically applied to new objects stored in this bucket. In S3 it is called **Server-Side Encryption (SSE)** which can be of three types.
 
-* **SSE-S3**: manages the encryption keys, handles entire encryption and decryption process.
+* **SSE-S3**: In this encryption, keys are owned, managed and handled by AWS S3. Data is encrypted using “AES-256“.
     
-* **SSE-KMS**: It uses the AWS Key Management Service (KMS) for encryption
+    Whenever new buckets and objects are created, S3 automatically encrypts it (by default) with a unique key and manages it for further use.
     
-* **SSE-C**: Using this we can manage our own encryption keys.
+    The picture below describes the scenerio in simpler way.
+    
+* **SSE-KMS**: It uses the AWS Key Management Service (KMS) for handling and managing encryption keys.
+    
+    As the keys are managed by yourself, you can audit key usage using CloudTrial. Moreover, KMS handles key rotation automatically making it more secure.
+    
+* **SSE-C**: This Server-Side Encryption provides the freedom to the clients or customers to create and manage own encryption keys.
+    
+    Whenever Customer provides the key, AWS encrypts the data and discards the key once encryption is done, meaning Amazon S3 does not store the key you provide.
+    
+    However, S3 requires HTTPS for all requests that use SSE-C to maintain secured transmission of customer provided keys.
     
 
 ![](https://miro.medium.com/v2/resize:fit:2000/1*ii-X6URstvPGwqGo6DS-6Q.png align="center")
+
+SSE-C encryption is suitable for users who want to manage their own keys, also want to use S3' encryption features.
 
 ### S3 Block Public Access
 
