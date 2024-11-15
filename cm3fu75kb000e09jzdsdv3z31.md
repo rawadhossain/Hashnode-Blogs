@@ -91,7 +91,7 @@ An example of JSON policy to the objects in a bucket
 
 Encryption is automatically applied to new objects stored in this bucket. In S3 it is called **Server-Side Encryption (SSE)** which can be of three types.
 
-### SSE-S3:
+### SSE-S3
 
 * In this encryption, keys are owned, managed and handled by AWS S3. Data is encrypted using “AES-256“.
     
@@ -102,7 +102,7 @@ Encryption is automatically applied to new objects stored in this bucket. In S3 
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731592227727/0c3ee2e8-094c-495b-87ff-43633f0ef385.png align="center")
     
 
-### SSE-KMS:
+### SSE-KMS
 
 * It uses the AWS Key Management Service (KMS) for handling and managing encryption keys.
     
@@ -111,7 +111,7 @@ Encryption is automatically applied to new objects stored in this bucket. In S3 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1731592408352/4762feb1-5fb9-423a-868c-d43762f6038a.png align="center")
 
-### SSE-C:
+### SSE-C
 
 * This Server-Side Encryption provides the freedom to the clients or customers to create and manage own encryption keys.
     
