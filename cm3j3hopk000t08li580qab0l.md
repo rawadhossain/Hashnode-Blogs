@@ -118,7 +118,7 @@ Using **AWS Management Console**, you can navigate to `Management Tab` and selec
 
 Using **AWS CLI**, you can directly update the storage class of object.
 
-```bash
+```coffeescript
 aws s3 cp s3://source-bucket/object-key s3://source-bucket/object-key --storage-class STANDARD_IA
 ```
 
