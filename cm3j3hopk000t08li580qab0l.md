@@ -1,10 +1,12 @@
 ---
-title: "A Comprehensive Look at Amazon S3 Storage Classes: Availability and Lifecycle Policies"
+title: "A Comprehensive Look into Amazon S3 Storage Classes: Availability and Lifecycle Policies"
+seoTitle: "Amazon S3 Storage Classes Overview"
+seoDescription: "Explore Amazon S3 storage classes, availability, lifecycle policies, and data transition for cost optimization using AWS Console, CLI, or SDK"
 datePublished: Fri Nov 15 2024 18:51:18 GMT+0000 (Coordinated Universal Time)
 cuid: cm3j3hopk000t08li580qab0l
 slug: storage-class
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1731696127292/49480bd6-0b94-47f0-aaab-b0c31e7da6f0.jpeg
-ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1731696624550/683fc604-f240-4be0-9b6e-20cd54dabc10.jpeg
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1731764609449/aa56a423-7dc0-40bb-8f39-9cecec5d586c.jpeg
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1731764625003/9c07a096-fab8-4b4d-887f-da69824e8658.jpeg
 tags: blogswithcc
 
 ---
