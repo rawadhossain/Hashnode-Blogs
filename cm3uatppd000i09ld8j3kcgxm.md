@@ -33,6 +33,12 @@ The website's digital assets, such as files, images, and videos, are stored on t
 
 Edge locations are the data centers to cache or store the content. Whenever any request is sent by user, CloudFront delivers it from nearest Edge locations instead of origin server.
 
+## How CloudFormation Works
+
+First, a structure or blueprint called a **Template** is created, written in either **JSON** or **YAML** format. This template outlines the infrastructure (like EC2 instances, S3 buckets, and databases) and their configurations. AWS CloudFormation uses these templates to automate the creation and management of AWS resources. The process begins by uploading the template to an Amazon S3 bucket. Once uploaded, AWS CloudFormation references the template and initiates a **stack**. A stack is a collection of resources defined in the template. CloudFormation then processes the template to set up and **configure resources**, such as EC2 instances, S3 buckets, or databases. This method ensures consistent and efficient deployment and also allows for updates or rollbacks as needed.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734012960321/7b0052bb-c5a1-4702-ba10-b09c5b65ed34.png align="center")
+
 ## Understanding Caching Process in CloudFront
 
 **Caching** in CloudFront is a process of storing copies of content at different **Edge Locations** to make it faster for the users to access. What CloudFront does is that it determines whether it can respond to the users request from its cache or it needs to fetch it from the origin server.
