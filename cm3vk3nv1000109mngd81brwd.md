@@ -17,7 +17,7 @@ In this blog, we will explore AWS Elastic Beanstalk and how it makes deploying a
 
 When an application is deployed on AWS, a developer must follow several steps. For example, they need to set up resources, choose the right EC2 instance type (size, CPU, memory, etc.), configure the instances, set security groups, install the necessary libraries and dependencies, manually transfer the application files to the EC2 instances, monitor traffic, and manually scale instances up or down. All these tasks can be quite a hassle for a developer. Developers want to manage all these tasks easily. This is where Elastic Beanstalk comes in.
 
-**Elastic Beanstalk** is a service in AWS that simplifies the deployment and management of applications in the cloud. It uses the components and automatically handles capacity provisioning, load balancing, scaling, and application monitoring for you, allowing developers to focus on writing code.
+**Elastic Beanstalk** is a service in AWS that simplifies the deployment and management of applications in the cloud. It uses the components and **automatically handles capacity provisioning, load balancing, auto-scaling, and application monitoring** for you, allowing developers to focus on writing code.
 
 ### Components of Elastic Beanstalk
 
